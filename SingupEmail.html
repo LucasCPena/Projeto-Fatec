@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Endereço</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Endereço</h1>
+        <form id="enderecoForm">
+            <fieldset>
+                <legend>Endereço Residencial</legend>
+                <div class="field-group">
+                    <div>
+                        <label for="tipoLogradouroResidencial">Tipo de Logradouro:</label>
+                        <input type="text" id="tipoLogradouroResidencial" name="tipoLogradouroResidencial" required>
+                    </div>
+                    <div>
+                        <label for="logradouroResidencial">Logradouro:</label>
+                        <input type="text" id="logradouroResidencial" name="logradouroResidencial" required>
+                    </div>
+                    <div>
+                        <label for="numeroResidencial">Número:</label>
+                        <input type="text" id="numeroResidencial" name="numeroResidencial" required>
+                    </div>
+                    <div>
+                        <label for="bairroResidencial">Bairro:</label>
+                        <input type="text" id="bairroResidencial" name="bairroResidencial" required>
+                    </div>
+                    <div>
+                        <label for="cepResidencial">CEP:</label>
+                        <input type="text" id="cepResidencial" name="cepResidencial" required pattern="\d{5}-\d{3}" placeholder="12345-678">
+                    </div>
+                    <div>
+                        <label for="cidadeResidencial">Cidade:</label>
+                        <input type="text" id="cidadeResidencial" name="cidadeResidencial" required>
+                    </div>
+                    <div>
+                        <label for="estadoResidencial">Estado:</label>
+                        <input type="text" id="estadoResidencial" name="estadoResidencial" required>
+                    </div>
+                    <div>
+                        <label for="paisResidencial">País:</label>
+                        <input type="text" id="paisResidencial" name="paisResidencial" required>
+                    </div>
+                    <div>
+                        <label for="observacoesResidencial">Observações:</label>
+                        <textarea id="observacoesResidencial" name="observacoesResidencial"></textarea>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Endereço de Cobrança</legend>
+                <div class="field-group">
+                    <div>
+                        <label for="tipoLogradouroCobranca">Tipo de Logradouro:</label>
+                        <input type="text" id="tipoLogradouroCobranca" name="tipoLogradouroCobranca" required>
+                    </div>
+                    <div>
+                        <label for="logradouroCobranca">Logradouro:</label>
+                        <input type="text" id="logradouroCobranca" name="logradouroCobranca" required>
+                    </div>
+                    <div>
+                        <label for="numeroCobranca">Número:</label>
+                        <input type="text" id="numeroCobranca" name="numeroCobranca" required>
+                    </div>
+                    <div>
+                        <label for="bairroCobranca">Bairro:</label>
+                        <input type="text" id="bairroCobranca" name="bairroCobranca" required>
+                    </div>
+                    <div>
+                        <label for="cepCobranca">CEP:</label>
+                        <input type="text" id="cepCobranca" name="cepCobranca" required pattern="\d{5}-\d{3}" placeholder="12345-678">
+                    </div>
+                    <div>
+                        <label for="cidadeCobranca">Cidade:</label>
+                        <input type="text" id="cidadeCobranca" name="cidadeCobranca" required>
+                    </div>
+                    <div>
+                        <label for="estadoCobranca">Estado:</label>
+                        <input type="text" id="estadoCobranca" name="estadoCobranca" required>
+                    </div>
+                    <div>
+                        <label for="paisCobranca">País:</label>
+                        <input type="text" id="paisCobranca" name="paisCobranca" required>
+                    </div>
+                    <div>
+                        <label for="observacoesCobranca">Observações:</label>
+                        <textarea id="observacoesCobranca" name="observacoesCobranca"></textarea>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Endereço de Entrega</legend>
+                <div class="field-group">
+                    <div>
+                        <label for="tipoLogradouroEntrega">Tipo de Logradouro:</label>
+                        <input type="text" id="tipoLogradouroEntrega" name="tipoLogradouroEntrega" required>
+                    </div>
+                    <div>
+                        <label for="logradouroEntrega">Logradouro:</label>
+                        <input type="text" id="logradouroEntrega" name="logradouroEntrega" required>
+                    </div>
+                    <div>
+                        <label for="numeroEntrega">Número:</label>
+                        <input type="text" id="numeroEntrega" name="numeroEntrega" required>
+                    </div>
+                    <div>
+                        <label for="bairroEntrega">Bairro:</label>
+                        <input type="text" id="bairroEntrega" name="bairroEntrega" required>
+                    </div>
+                    <div>
+                        <label for="cepEntrega">CEP:</label>
+                        <input type="text" id="cepEntrega" name="cepEntrega" required pattern="\d{5}-\d{3}" placeholder="12345-678">
+                    </div>
+                    <div>
+                        <label for="cidadeEntrega">Cidade:</label>
+                        <input type="text" id="cidadeEntrega" name="cidadeEntrega" required>
+                    </div>
+                    <div>
+                        <label for="estadoEntrega">Estado:</label>
+                        <input type="text" id="estadoEntrega" name="estadoEntrega" required>
+                    </div>
+                    <div>
+                        <label for="paisEntrega">País:</label>
+                        <input type="text" id="paisEntrega" name="paisEntrega" required>
+                    </div>
+                    <div>
+                        <label for="observacoesEntrega">Observações:</label>
+                        <textarea id="observacoesEntrega" name="observacoesEntrega"></textarea>
+                    </div>
+                </div>
+            </fieldset>
+
+            <button type="button" onclick="window.location.href='SingupCard.html'">Próxima Etapa</button>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

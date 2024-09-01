@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Cartão de Crédito</title>
+    <link rel="stylesheet" href="stylecard.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Cartão de Crédito</h1>
+        <form id="cartaoForm">
+            <div class="field-group">
+                <div>
+                    <label for="numeroCartao">Número do Cartão:</label>
+                    <input type="text" id="numeroCartao" name="numeroCartao" required pattern="\d{4} \d{4} \d{4} \d{4}" placeholder="1234 5678 1234 5678" maxlength="19">
+                </div>
+                <div>
+                    <label for="nomeTitular">Nome do Titular:</label>
+                    <input type="text" id="nomeTitular" name="nomeTitular" required>
+                </div>
+            </div>
+
+            <div class="field-group">
+                <div>
+                    <label for="validade">Validade:</label>
+                    <input type="text" id="validade" name="validade" required pattern="\d{2}/\d{2}" placeholder="MM/AA" maxlength="5">
+                </div>
+                <div>
+                    <label for="codigoSeguranca">Código de Segurança:</label>
+                    <input type="text" id="codigoSeguranca" name="codigoSeguranca" required pattern="\d{3}" placeholder="123" maxlength="3">
+                </div>
+            </div>
+
+            <button type="submit">Cadastrar Cartão</button>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
